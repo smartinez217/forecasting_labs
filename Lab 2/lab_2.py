@@ -45,7 +45,7 @@ by cell using the '# %%' markers), or top to bottom as a single script.
 # which is a common way to work through a lab.
 
 
-LAB_FOLDER = r"\Users\ncachanosky\OneDrive\Research\GitHub\ECON-5371-lab\lab_2"
+LAB_FOLDER = r"C:\Users\smart\Documents\School\Forecasting\Labs\forecasting_labs\Lab 2"
 
 import os
 
@@ -287,6 +287,10 @@ print(f"12-Month Forecast -- ARIMA{best_order}")
 print(f"{'='*72}")
 print(forecast_table)
 print(f"{'='*72}")
+
+#it looks like there is a break between the last ovservation and the first forecast, but that is because the forecast
+#is based off the mean of the data; if you were to make a line with the mean, it would touch the forecast
+#the line is more straight than jagged because seasonality was not in the model
 
 
 # %% 7. Compare Models
